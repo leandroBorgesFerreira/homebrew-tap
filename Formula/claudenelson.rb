@@ -5,21 +5,21 @@
 class Claudenelson < Formula
   desc "Terminal block-based text editor like Notion"
   homepage "https://github.com/leandroBorgesFerreira/Claudenelson"
-  version "0.4.2"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.4.2/claudenelson_0.4.2_darwin_amd64.tar.gz"
-      sha256 "101c9fee0ee2663c6cf6e8497355a13c4d6313e151123655d5e2ae1d4c82894d"
+      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.5.0/claudenelson_0.5.0_darwin_amd64.tar.gz"
+      sha256 "dcf6fc3adbf4650ff34800ca1a6a55423e5e4d42e68781cdda18f4edb9156e32"
 
       define_method(:install) do
         bin.install "claudenelson"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.4.2/claudenelson_0.4.2_darwin_arm64.tar.gz"
-      sha256 "3f1ad2e2ed5bb45e0150c9f2fe47b28ce962ad9209b23b74875233d11376ab6a"
+      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.5.0/claudenelson_0.5.0_darwin_arm64.tar.gz"
+      sha256 "1eb7195b335bf1a0214bb11b820dabe6fdad11407cd47b0f9433f78ab97519e0"
 
       define_method(:install) do
         bin.install "claudenelson"
@@ -29,15 +29,15 @@ class Claudenelson < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.4.2/claudenelson_0.4.2_linux_amd64.tar.gz"
-      sha256 "6007ba91a4aca2760e65c54bd15a0748af71ca86e719959c99cd98cea755eb21"
+      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.5.0/claudenelson_0.5.0_linux_amd64.tar.gz"
+      sha256 "de336127a4278fa1f394d1ea19bd25c72c22b2fcc6cb3f3a0cfdca6e3258f010"
       define_method(:install) do
         bin.install "claudenelson"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.4.2/claudenelson_0.4.2_linux_arm64.tar.gz"
-      sha256 "e2e631bb2b1f32910532a08ad58fd550f7eb5e0694b9b25431da5d2cc12026df"
+      url "https://github.com/leandroBorgesFerreira/Claudenelson/releases/download/v0.5.0/claudenelson_0.5.0_linux_arm64.tar.gz"
+      sha256 "101f91fec9ae80eeb4186cc78991ef4d96dcaf4cc09573890dd367ee8bf84a5a"
       define_method(:install) do
         bin.install "claudenelson"
       end
